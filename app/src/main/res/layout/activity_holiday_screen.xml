@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normalbackground"
+    tools:context=".HolidayScreen">
+
+
+    <TextView
+        android:id="@+id/holidayTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Set your holiday"
+        android:textColor="@color/blue"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <CheckBox
+        android:id="@+id/annualCheckbox"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        android:text="ANNUAL HOLIDAYS"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holidayTitle" />
+
+
+    <EditText
+        android:id="@+id/holidayName"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:hint="Holiday Name"
+        android:inputType="textAutoCorrect"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/annualCheckbox" />
+
+    <Button
+        android:id="@+id/startDateButton"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/button"
+        android:text="Start Date"
+        android:textAllCaps="true"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holidayName" />
+
+    <Button
+        android:id="@+id/confirmDates"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button"
+        android:text="CONIFRM"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generalText"
+        app:layout_constraintVertical_bias="0.338" />
+
+    <TextView
+        android:id="@+id/startDateText"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Set a Start Date."
+        android:textColor="@color/blue"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDateButton" />
+
+    <Button
+        android:id="@+id/endDateButton"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/button"
+        android:text="End Date"
+        android:textAllCaps="true"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDateText" />
+
+    <TextView
+        android:id="@+id/endDateText"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Set a End Date."
+        android:textColor="@color/blue"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endDateButton" />
+
+    <TextView
+        android:id="@+id/generalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:text="Please select a valid start date and a valid end date."
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endDateText" />
+
+    <Button
+        android:id="@+id/bookButton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button"
+        android:text="Book Details"
+        android:textAllCaps="true"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generalText"
+        app:layout_constraintVertical_bias="0.339" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

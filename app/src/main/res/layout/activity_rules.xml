@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen"
+    android:background="@drawable/normalbackground"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="71dp"
+        android:text="Welcome to the holiday application, this application is solely designed for the mainpurpose of enabling employees to freely take holidays/day offs whenever they desire. The main aim of this application is to give freedom to those who constantly work during crunch time. For the basis of mini crunches, the first 14 days of a new month will be considered as peak times, also known as crunch times, the rest of the days afterwards are known as off peak times also known as no crunch days. For the basis of mini crunches, the first 14 days of a new month will be considered as peak times, also known as crunch times, the rest of the days afterwards are known as off peak times also known as no crunch days.
+                                                                                                                                                        For any other further inquiries or app support email: RedemptionStudios@studio.com"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+
+
+
+
+</RelativeLayout>
